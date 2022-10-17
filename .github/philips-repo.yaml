@@ -1,0 +1,10 @@
+# This file is part of the GitHub Continuous Compliance initiative.
+# More information can be found here https://github.com/philips-internal/continuous-compliance
+
+# Business Category according to https://share.philips.com/sites/SWCoE/Lists/List%20of%20Business%20Categories/AllItems.aspx
+# SWCoE   - 62
+# HSDP-CP - 6
+business-category: 6
+
+# Direct link to details business-category.
+business-category-details: https://share.philips.com/sites/SWCoE/Lists/List%20of%20Business%20Categories/DispForm.aspx?ID=6&e=A7Mugf

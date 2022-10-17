@@ -1,0 +1,11 @@
+M:System.Text.StringBuilder.#ctor(); Use constructor with Capacity argument instead.
+M:System.Text.StringBuilder.#ctor(System.String); Use constructor with Capacity argument instead.
+M:System.GC.Collect(); Don't explicitly call the Gargabe Collector.
+M:System.GC.Collect(System.Int32); Don't explicitly call the Gargabe Collector.
+M:System.GC.WaitForPendingFinalizers(); Don't explicitly call the Gargabe Collector.
+M:System.Threading.Thread.#ctor(System.Threading.ParameterizedThreadStart); Don't create a Thread directly, use the ThreadPool instead.
+M:System.Threading.Thread.#ctor(System.Threading.ThreadStart); Don't create a Thread directly, use the ThreadPool instead.
+M:System.Threading.Thread.#ctor(System.Threading.ParameterizedThreadStart, System.Int32); Don't create a Thread directly, use the ThreadPool instead.
+M:System.Threading.Thread.#ctor(System.Threading.ThreadStart, System.Int32); Don't create a Thread directly, use the ThreadPool instead.
+P:System.WeakReference.IsAlive; Instead, assign a local variable with the Target property and theck the local variable for null.
+F:System.Runtime.CompilerServices.MethodImplOptions.Synchronized

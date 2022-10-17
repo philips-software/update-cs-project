@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "UpdateCSProject": {
+      "commandName": "Project",
+      "commandLineArgs": "d:\\views\\trunk\\AppDev\\ViewingApplications --updateanalyzerreference"
+    }
+  }
+}
