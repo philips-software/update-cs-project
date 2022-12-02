@@ -17,19 +17,28 @@ This repository is under Active development and used to maintain an enterprise a
 
 ## Usage
 
+### Example (WIP)
+* Ensure this project is built (see below)
+* Add the FxCop analyzers with the command 
+```UpdateCsProject.exe . --addanalyzer Microsoft.CodeAnalysis.NetAnalyzers 6.0.0```
+* Please build your projects. Most likely it will fail to compile, because the analyzers flag issues
+* Add the GlobalSuppressions with the command
+```UpdateCsProject.exe . --suppress```
+
+### Command line options
 Update CS Project provides a extensible mechanism, which can be configured with the following command line options:
 
 | Command switch                 | Description                                                                    |
 |--------------------------------|--------------------------------------------------------------------------------|
+| --addanalyzer                  | Add a given analyzer to the references                                         |
 | --suppress                     | Suppress all existing Code Analyzer errors in the GlobalSuppressions.cs file.  |
-| --analyzers                    | Add a predefined list of mandatory Code Analyzer references.                   |
 | --updateinvalidsuppressionpath | Delete or moves the GlobalSuppressions file from Properties folder to the root.|
-| --updateanalyzerreference      | Adds or updates the References to Roslyn Analyzers.                            |
 | --removeproperty               | Remove the specified property.                                                 |
 
 ## How to Build
 * Ensure you have a recent version of Visual Studio
 * `dotnet build Source\UpdateCSProject.sln`
+* The path to the executable is: 'Source\UpdateCSProject\bin\debug\net472\UpdateCsProject.exe'
 
 ## Support
 
