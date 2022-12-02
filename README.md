@@ -4,8 +4,13 @@ Welcome to the Update CS Project repository.
 
 ## Overview
 
-Update CS Project allows batch updates to C# project files. This ensures consistency in enterprise archives, without the need for active checking / gating.
+Update CS Project allows batch updates to C# project files. 
+There are a few main use cases, that all work in batch mode so you can update 100s of project files in one go
+1. Adding a code analyzer, that performs static code analysis checks on a project
+2. Updating a code analyzer to the latest version
+3. Generating a GlobalSuppressions file. This may be required after introducing or updating an analyzer, since that may lead to 100s or 1000s of violations that break the build and cannot be addressed immediately.
 
+Using this tool ensures consistency in enterprise archives, without the need for active checking / gating.
 ## State
 
 This repository is under Active development and used to maintain an enterprise archive with over 250 csproj files.
@@ -21,6 +26,10 @@ Update CS Project provides a extensible mechanism, which can be configured with 
 | --updateinvalidsuppressionpath | Delete or moves the GlobalSuppressions file from Properties folder to the root.|
 | --updateanalyzerreference      | Adds or updates the References to Roslyn Analyzers.                            |
 | --removeproperty               | Remove the specified property.                                                 |
+
+## How to Build
+* Ensure you have a recent version of Visual Studio
+* `dotnet build Source\UpdateCSProject.sln`
 
 ## Support
 
