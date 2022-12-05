@@ -19,6 +19,7 @@ This repository is under Active development and used to maintain an enterprise a
 
 ### Example (WIP)
 * Ensure this project is built (see below)
+* Ensure your projects are fully built
 * Add the FxCop analyzers with the command 
 ```UpdateCsProject.exe . --addanalyzer Microsoft.CodeAnalysis.NetAnalyzers 6.0.0```
 * Please build your projects. Most likely it will fail to compile, because the analyzers flag issues
