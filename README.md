@@ -4,7 +4,7 @@ Welcome to the Update CS Project repository.
 
 ## Overview
 
-Update CS Project allows batch updates to C# project files. 
+Update CS Project allows batch updates to C# project files.   
 There are a few main use cases, that all work in batch mode so you can update 100s of project files in one go
 1. Adding a code analyzer, that performs static code analysis checks on a project
 2. Updating a code analyzer to the latest version
